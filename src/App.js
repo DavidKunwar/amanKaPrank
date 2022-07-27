@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    clicked()
+  }, [])
+
+  function clicked(){
+    alert('Click OK to be fucked !')
+    for(let i = 1 ;i > 0; i++){
+      console.log(i)
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
